@@ -1,0 +1,73 @@
+@font-face {
+font-family: AVENGEANCE;
+src: url("../fonts/AVENGEANCE.otf") format("opentype");
+}
+
+body {
+	text-align: center;
+	background-color: #eee;
+}
+h1 {
+	margin-top: 60px;
+	font-family: AVENGEANCE;
+	font-size: 4em;
+}
+input {
+	margin: 30px;
+	padding: 10px;
+	font-size: 20px;	
+	border: 1px solid #ddd; 
+}
+ol {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+li {
+	display: inline-block;
+	background-color: white;
+	width: 120px;   
+	vertical-align: top;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ddd; 
+	text-align: center; 
+  	cursor: pointer; 	
+  	
+	img {
+		margin-bottom: 10px;
+	}
+	
+  	transition: box-shadow .1s, transform .1s;
+	
+	&:hover {
+	  box-shadow:8px 8px 8px #aaaaaa;
+	  transform: scale(1.03,1.03);
+	}
+			
+}
+
+#canvas-container {
+  background-color: white;
+  border: 1px solid #ddd; 
+  margin: 50px auto;
+  box-shadow:8px 8px 8px #aaaaaa;
+  width: 550px;
+}
+
+#character-sheet {
+  width: 550px;   
+  margin: auto;
+  
+  h3 {
+    margin: 0px;
+    text-align: left;
+  } 
+  p {
+    text-align: justify;
+  } 
+  img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

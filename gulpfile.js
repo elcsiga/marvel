@@ -40,6 +40,12 @@ gulp.task('robots', function() {
         .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('htaccess', function() {
+    gulp.src('src/.htaccess')
+        .pipe(gulp.dest('dist/'));
+});
+
+
 gulp.task('static', function() {
     gulp.src('src/static/*')
         .pipe(gulp.dest('dist/static/'));
@@ -51,7 +57,7 @@ gulp.task('config', function() {
 });
 
 gulp.task('fonts', function() {
-    gulp.src('src/bower_components/bootstrap/dist/fonts/*')
+    gulp.src('src/assets/fonts/*')
         .pipe(gulp.dest('dist/assets/fonts'));
 });
 
@@ -75,7 +81,7 @@ gulp.task('compass', function() {
         .pipe(gulp.dest('src/assets/styles'))
 });
 
-gulp.task('base', ['robots', 'static', 'config', 'fonts', 'images', 'styles']);
+gulp.task('base', ['robots', 'static', 'config', 'fonts', 'images', 'styles', "htaccess"]);
 
 gulp.task('scripts', ['lint'], function() {
     var bundler = browserify({

@@ -3,12 +3,10 @@
 
 var React = require('react');
 
-var SearchResults = require('../components/searchResults.js');
-var SearchBox = require('../components/searchBox.js');
 var MarvelAPI = require('../services/marvelAPI.js');
 var LineArtCanvas = require('../components/LineArtCanvas.js');
 
-var SearchView = React.createClass({
+var CharacterView = React.createClass({
   
   	getInitialState: function() {
 		return {
@@ -58,4 +56,4 @@ var SearchView = React.createClass({
   	}  
 });
 
-module.exports = SearchView;
+module.exports = CharacterView;
